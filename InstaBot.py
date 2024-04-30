@@ -360,6 +360,22 @@ class InstaBot():
 
 
 if __name__ == "__main__":
+    import os
+    if not os.path.exists("data"):
+        os.mkdir("data")
+        
+    if not os.path.exists("horoscopes"):
+        os.mkdir("horoscopes")
+        
+    if not os.path.exists("posts_api"):
+        os.mkdir("posts_api")
+        
+    if not os.path.exists("posts"):
+        os.mkdir("posts")
+        
+    if not os.path.exists("stories"):
+        os.mkdir("stories")
+    
     bot = InstaBot("horoscope_fr_")
     id = bot.get_user_id("williamlls")
     #pks_medias, codes_medias = bot.get_user_medias("williamlls")
