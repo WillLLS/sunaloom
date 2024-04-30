@@ -102,7 +102,8 @@ def publish():
 
     signs = ["belier", "taureau", "gemeaux", "cancer", "lion", "vierge", "balance", "scorpion", "sagittaire", "capricorne", "verseau", "poissons"]
 
-    
+    # for test
+    signs = ["belier"]
     for sign in signs:
         
         description = get_description(sign)
